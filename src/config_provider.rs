@@ -29,7 +29,7 @@ impl ConfigProvider {
         }
     }
 
-    pub fn config<T: DeserializeOwned>(&self) -> Result<T, ConfigProviderError> {
+    pub fn create_config<T: DeserializeOwned>(&self) -> Result<T, ConfigProviderError> {
         serde_yaml::from_str::<T>(&self.raw_config).map_err(|_| ConfigProviderError::ParseError)
     }
 }

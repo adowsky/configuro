@@ -1,0 +1,5 @@
+---
+param:
+  value1: 'base value1'
+  value2: 'base value 2'
+  int_value: 0

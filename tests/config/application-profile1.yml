@@ -1,0 +1,5 @@
+---
+param:
+  value1: 'such a value'
+  value2: 'value 2'
+  int_value: 32

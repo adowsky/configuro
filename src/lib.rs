@@ -4,9 +4,8 @@ use yaml_rust::Yaml;
 
 mod config_provider;
 mod local_config;
-mod yaml;
-
 pub mod profiles;
+mod yaml;
 
 pub use config_provider::ConfigProvider;
 

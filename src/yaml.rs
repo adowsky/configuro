@@ -48,3 +48,4 @@ pub fn parse_yaml_config(sources: &[String]) -> Yaml {
         .reduce(|e1, mut e2| e1.merge(&mut e2))
         .unwrap_or_else(|| Yaml::from_str(""))
 }
+
