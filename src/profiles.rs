@@ -1,5 +1,7 @@
 static PROFILES_VAR: &str = "APP_PROFILES";
 
+/// Reads profiles from env variable `APP_PROFILES`. When variable is not specified 
+/// falls back to `default_profie` passed as argument.
 pub fn discover_profiles(default_profile: Option<&str>) -> Vec<String> {
     std::env::var(PROFILES_VAR)
         .unwrap_or_else(|_| default_profile.unwrap_or("").into())
