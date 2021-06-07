@@ -10,6 +10,11 @@ keywords = ["configuro", "config", "configuration"]
 repository = "https://github.com/adowsky/configuro"
 license = "MIT"
 categories = ["configuration"]
+include = [
+    "src/**/*",
+    "Cargo.toml",
+    "LICENSE"
+]
 
 [dependencies]
 serde_yaml = "0.8"
